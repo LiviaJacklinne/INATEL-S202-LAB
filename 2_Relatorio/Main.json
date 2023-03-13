@@ -1,0 +1,17 @@
+{
+    "elefante 1":
+    {
+        "nome": "alvo",
+        "cor": ["rosa", "cinza"],
+        "trombar": "Puunf",
+        "especie": "africano"
+    },
+
+    "elefante 2":
+    {
+        "nome": "dumbo",
+        "cor": ["preto", "marrom"],
+        "trombar": "Puunf",
+        "especie": "asiatico"
+    }
+}
