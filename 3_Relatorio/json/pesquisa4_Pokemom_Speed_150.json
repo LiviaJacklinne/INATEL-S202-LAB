@@ -1,0 +1,48 @@
+[
+    {
+        "_id": {
+            "$oid": "642356b1e1abf3c65903de5f"
+        },
+        "id": 101,
+        "name": {
+            "english": "Electrode",
+            "japanese": "\u30de\u30eb\u30de\u30a4\u30f3",
+            "chinese": "\u987d\u76ae\u96f7\u5f39",
+            "french": "\u00c9lectrode"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 50,
+            "Defense": 70,
+            "Sp. Attack": 80,
+            "Sp. Defense": 80,
+            "Speed": 150
+        }
+    },
+    {
+        "_id": {
+            "$oid": "642356b1e1abf3c65903df7c"
+        },
+        "id": 386,
+        "name": {
+            "english": "Deoxys",
+            "japanese": "\u30c7\u30aa\u30ad\u30b7\u30b9",
+            "chinese": "\u4ee3\u6b27\u5947\u5e0c\u65af",
+            "french": "Deoxys"
+        },
+        "type": [
+            "Psychic"
+        ],
+        "base": {
+            "HP": 50,
+            "Attack": 150,
+            "Defense": 50,
+            "Sp. Attack": 150,
+            "Sp. Defense": 50,
+            "Speed": 150
+        }
+    }
+]
