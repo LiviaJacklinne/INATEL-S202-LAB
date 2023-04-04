@@ -1,10 +1,6 @@
 from typing import Collection
 import pymongo
-import json
-
-with open('data.json',encoding='utf8') as f:
-    dataset = json.load(f)
-
+import dataset
 
 class Database:
     def __init__(self, database, collection):
