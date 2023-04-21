@@ -1,0 +1,61 @@
+{
+    $jsonSchema:  {
+        bsonType: 'object',
+        required: ['id, 'nome', 'especie', 'idade', 'habitat'],
+        properties: {
+           id: {
+                bsonType: 'string',
+                desciption: 'deve ser uma string'
+            },
+            nome: {
+                bsonType: 'string',
+                desciption: 'deve ser uma string'
+            },
+            especie: {
+                bsonType: 'string',
+                desciption: 'deve ser uma string'
+            },
+            idade: {
+                bsonType: 'int',
+                desciption: 'deve ser um int'
+            },
+            habitat: {
+                bsonType: 'object',
+                required: ['id', 'nome', 'tipoAmbiente', 'cuidador'],
+                properties: {
+                    id: {
+                        bsonType: 'string',
+                        desciption: 'deve ser uma string'
+                    },
+                    nome: {
+                        bsonType: 'string',
+                        desciption: 'deve ser uma string'
+                    },
+                    tipoAmbiente: {
+                        bsonType: 'string',
+                        desciption: 'deve ser uma string'
+                    }
+                    cuidador: {
+                        bsonType: 'object',
+                        required: ['id', 'nome', 'documento'],
+                        properties:
+                        {
+                            id: {
+                                bsonType: 'string',
+                                desciption: 'deve ser uma string'
+                            },
+                            nome: {
+                                bsonType: 'string',
+                                desciption: 'deve ser uma string'
+                            },
+                            documento: {
+                                bsonType: 'string',
+                                desciption: 'deve ser uma string'
+                            }
+                        }
+                    }
+                }
+            }
+        }      
+    }
+}
