@@ -31,12 +31,12 @@ class ZoologicoDAO(Animal):
         
     def updateAnimal(self, id:str, name:str, especie:str, idade:int):
         try:
-            res = self.db.collection.update_one({'_id': ObjectId(id)},{'$set': {'nome':name, 'especie':especie, 'idade':idade}})
+            res = self.db.collection.update_one({'id': id},{'$set': {'nome':name, 'especie':especie, 'idade':idade}})
             print(f'Animal alterado com sucesso: {res.modified_count}')
             return res.modified_count
         except Exception as e:
-         print(f'Erro na alteração do animal: {e}')
-         return None
+            print(f'Erro na alteração do animal: {e}')
+            return None
      
     def deleteAnimal(self, id:str):
         try:
